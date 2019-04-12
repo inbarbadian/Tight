@@ -72,13 +72,13 @@ public class MainFragment extends Fragment {
         public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
             if (i == 0) {
                 Picasso.get().load(R.drawable.test_1).fit().into(viewHolder.imageView);
-                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.shoes);
+                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.skirt);
             } else if (i == 1) {
                 Picasso.get().load(R.drawable.test_2).fit().into(viewHolder.imageView);
                 viewHolder.setBadges(R.drawable.dress, R.drawable.hills);
             } else if (i == 2) {
                 Picasso.get().load(R.drawable.test_3).fit().into(viewHolder.imageView);
-                viewHolder.setBadges(R.drawable.dress);
+                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants);
             } else if (i == 3) {
                 Picasso.get().load(R.drawable.test_4).fit().into(viewHolder.imageView);
                 viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants);
@@ -175,12 +175,12 @@ public class MainFragment extends Fragment {
 
         @Override
         public void onCardAppeared(View view, int position) {
-            // make the reactions images appear for 300 ms, then hide
+            // make the reactions images appear for 200 ms, then hide
             Thread thread = new Thread() {
                 @Override
                 public void run() {
                     try {
-                        Thread.sleep(300);
+                        Thread.sleep(200);
                     } catch (InterruptedException e) {
                     }
 
