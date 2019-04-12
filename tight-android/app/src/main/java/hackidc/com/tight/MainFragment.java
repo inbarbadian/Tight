@@ -78,7 +78,7 @@ public class MainFragment extends Fragment {
                 viewHolder.setBadges(R.drawable.dress, R.drawable.hills);
             } else if (i == 2) {
                 Picasso.get().load(R.drawable.test_3).fit().into(viewHolder.imageView);
-                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants);
+                viewHolder.setBadges(R.drawable.coat, R.drawable.pants);
             } else if (i == 3) {
                 Picasso.get().load(R.drawable.test_4).fit().into(viewHolder.imageView);
                 viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants);
