@@ -17,6 +17,9 @@ import com.yuyakaido.android.cardstackview.CardStackListener;
 import com.yuyakaido.android.cardstackview.CardStackView;
 import com.yuyakaido.android.cardstackview.Direction;
 
+/**
+ * This is a documentation by Doron Passal the author of this code
+ */
 public class MainFragment extends Fragment {
 
     ImageView heartImg;
