@@ -25,7 +25,7 @@ public class MainFragment extends Fragment {
     ImageView heartImg;
     ImageView negativeImg;
 
-    int totalMocks = 4;
+    int totalMocks = 11;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -82,6 +82,27 @@ public class MainFragment extends Fragment {
             } else if (i == 3) {
                 Picasso.get().load(R.drawable.test_4).fit().into(viewHolder.imageView);
                 viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants);
+            } else if (i == 4) {
+                Picasso.get().load(R.drawable.test_5).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.hat);
+            } else if (i == 5) {
+                Picasso.get().load(R.drawable.test_6).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.dress);
+            } else if (i == 6) {
+                Picasso.get().load(R.drawable.test_7).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.pants, R.drawable.shoes);
+            } else if (i == 7) {
+                Picasso.get().load(R.drawable.test_8).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.hat, R.drawable.coat);
+            } else if (i == 8) {
+                Picasso.get().load(R.drawable.test_9).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.long_sleeve_shirt, R.drawable.skirt);
+            } else if (i == 9) {
+                Picasso.get().load(R.drawable.test_10).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.dress, R.drawable.hills);
+            } else if (i == 10) {
+                Picasso.get().load(R.drawable.test_11).fit().into(viewHolder.imageView);
+                viewHolder.setBadges(R.drawable.dress, R.drawable.hills);
             }
         }
 
